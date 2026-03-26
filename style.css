@@ -1,3 +1,7 @@
+body.stop * {
+    animation: none !important;
+    transition: none !important;
+}
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
@@ -200,6 +204,7 @@ body {
     width: 0px;
     animation: dateOfBirth 5s 9s forwards;
 }
+
 @keyframes dateOfBirth{
     20%,40%{
         width: 0px;
@@ -273,7 +278,7 @@ body {
     justify-content: center;
     align-items: center;
     transform: scale(0);
-    animation: scaleCricle 3s 15s forwards ease-in-out;
+    animation: scaleCricle 1s 15s forwards ease-in-out;
 }
 @keyframes scaleCricle {
     0%{
