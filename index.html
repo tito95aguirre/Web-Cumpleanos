@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <audio autoplay loop id="bgMusic">
+        <source src="CUMPLEAÑOS FELIZ VENEZOLANO.mp3" type="audio/mpeg">
+    </audio>
     <div id="wrapper">
         <div class="flag__birthday">
             <img src="./images/1.png" alt="" width="350" class="flag__left">
@@ -170,6 +173,10 @@
     let currentIndexTitle = 0;
     let date__of__birth = document.querySelector(".date__of__birth span");
     let text__letter = document.querySelector(".text__letter p");
+    document.addEventListener("click", function() {
+    const audio = document.getElementById("bgMusic");
+    audio.play();
+    }, { once: true });
     setTimeout(function () {
         timeDatetxt = setInterval(function () {
             if (currentIndex < charArrDate.length) {
